@@ -1,4 +1,4 @@
-const CACHE_NAME = 'nekonexa-v2';
+const CACHE_NAME = 'nekonexa-v3';
 const ASSETS = ['./', './index.html', './manifest.webmanifest'];
 
 self.addEventListener('install', event => {
