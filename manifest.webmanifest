@@ -1,0 +1,11 @@
+{
+  "name": "STIV3N APK",
+  "short_name": "STIV3N",
+  "description": "Tu espacio de aplicaciones y herramientas web.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#090909",
+  "theme_color": "#090909",
+  "icons": []
+}
