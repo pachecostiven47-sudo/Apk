@@ -1,24 +1,37 @@
 # NekoNexa — Portal Anime
 
-NekoNexa is a mobile-first web portal designed for iPhone. It provides shortcuts to Kawaii Animes official web resources and a simple external web search.
+NekoNexa is a mobile-first web portal for iPhone. It offers a shortcut to the Kawaii Animes website, a web search helper, and a link to SpawnDroid for running compatible Android builds in a cloud-hosted Android session.
 
-## Platform limitations
+## What it does
 
-An iPhone cannot natively install or run Android APK files. This project is a web portal, not an Android emulator, APK-to-iOS converter, or native iOS app. It does not host anime episodes or copy the original Kawaii Animes application.
+- Responsive dark/pink interface for iPhone and desktop.
+- Kawaii Animes website and official Android download-page shortcuts.
+- Search helper that opens a web search in a new tab.
+- Add-to-Home-Screen guidance and a web app manifest/icon.
+- A pre-deployment sanity check for required files, local links, manifest and core UI.
 
-The official Android download link is provided for Android devices only. To reproduce features from another app, use its official web version, source code with permission, or an official iOS app. Android-only features may require a compatible remote Android service.
+## What it does not do
 
-## Publish with GitHub Pages
+- It is **not** a native iOS app or an Android emulator.
+- iOS cannot install or run APK files directly.
+- NekoNexa does not embed Kawaii Animes, its catalogue, video streams, accounts, or private APIs.
+- The SpawnDroid link is an external service, not an automatic integration: users sign in there and upload an APK/AAB they have permission to run. SpawnDroid is in early access; service limits and availability can change.
 
-The workflow in `.github/workflows/pages.yml` can deploy the site after a push to `main`. Confirm the latest workflow run succeeds, then open the GitHub Pages URL.
+## Deploy with GitHub Pages
+
+The workflow at `.github/workflows/pages.yml` runs `scripts/check_site.py` before deploying the static site. On GitHub, open **Settings → Pages** and select **GitHub Actions** as the build/deployment source if Pages is not already configured. Then open the Actions tab and confirm the latest workflow run succeeds.
+
+Published URL (once deployment is successful): https://pachecostiven47-sudo.github.io/Apk/
 
 ## Add to iPhone
 
-Open the published HTTPS page in Safari, tap Share, then Add to Home Screen. This creates a web app shortcut, not a native iOS app.
+Open the published HTTPS URL in Safari, tap **Share**, choose **Add to Home Screen**, and confirm. This creates a shortcut/web app experience; it does not install an Android APK.
 
 ## External links
 
 - Kawaii Animes: https://www.kawaiianimes.app/
-- Android downloads: https://www.kawaiianimes.app/descargas/android/
+- Official Android download page: https://www.kawaiianimes.app/descargas/android/
+- SpawnDroid console: https://app.spawndroid.io
+- SpawnDroid first-APK guide: https://spawndroid.io/help/upload-your-first-apk/
 
-External websites and their content remain under their respective owners.
+External sites, services, applications and content remain the responsibility of their respective owners.
