@@ -1,33 +1,24 @@
-# STIV3N APK
+# NekoNexa — Portal Anime
 
-A lightweight, mobile-first web companion with a black-and-red interface.
+NekoNexa is a mobile-first web portal designed for iPhone. It provides shortcuts to Kawaii Animes official web resources and a simple external web search.
 
-## Important platform limitation
+## Platform limitations
 
-An iPhone cannot natively install or run Android `.apk` packages. This project does **not** emulate Android, convert APK binaries to iOS apps, or install APK files. The file picker only displays the selected filename locally; it does not upload or execute the file.
+An iPhone cannot natively install or run Android APK files. This project is a web portal, not an Android emulator, APK-to-iOS converter, or native iOS app. It does not host anime episodes or copy the original Kawaii Animes application.
 
-To adapt a specific Android app for iPhone, we need one of:
-- the app's existing web version;
-- the app's source code and permission to adapt it;
-- an official iOS version or a supported alternative.
-
-## Run locally
-
-Open `index.html` in a modern browser. For PWA/service-worker behavior, serve the folder over HTTPS or localhost.
+The official Android download link is provided for Android devices only. To reproduce features from another app, use its official web version, source code with permission, or an official iOS app. Android-only features may require a compatible remote Android service.
 
 ## Publish with GitHub Pages
 
-1. Open repository Settings → Pages.
-2. Under Build and deployment, choose **Deploy from a branch**.
-3. Choose branch `main` and folder `/ (root)`, then Save.
-4. Wait for the Pages deployment to finish and open the published URL.
+The workflow in `.github/workflows/pages.yml` can deploy the site after a push to `main`. Confirm the latest workflow run succeeds, then open the GitHub Pages URL.
 
-The workflow in `.github/workflows/pages.yml` can also deploy the site automatically on pushes to `main`.
+## Add to iPhone
 
-## Install on iPhone
+Open the published HTTPS page in Safari, tap Share, then Add to Home Screen. This creates a web app shortcut, not a native iOS app.
 
-Open the published HTTPS URL in Safari → Share → Add to Home Screen. This installs a web shortcut/PWA, not an Android runtime.
+## External links
 
-## Privacy
+- Kawaii Animes: https://www.kawaiianimes.app/
+- Android downloads: https://www.kawaiianimes.app/descargas/android/
 
-The APK file picker does not read the contents of the chosen file or send it to a server.
+External websites and their content remain under their respective owners.
