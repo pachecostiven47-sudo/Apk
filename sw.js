@@ -1,4 +1,4 @@
-const CACHE_NAME = 'stiv3n-apk-v1';
+const CACHE_NAME = 'nekonexa-v1';
 const ASSETS = ['./', './index.html', './manifest.webmanifest'];
 
 self.addEventListener('install', event => {
